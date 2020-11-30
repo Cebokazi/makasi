@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+                body {
+                font-family: 'Lato', sans-serif;
+                background: url("beach.jpg") no-repeat;
+                background-size: 2000px;
+                }
+
+                .overlay {
+                height: 0%;
+                width: 100%;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                background-color:  rgb(0,0,0);
+                background-color: rgba(0,0,0, 0.9);
+                overflow-y: hidden;
+                transition: 0.5s;
+                }
+
+                .overlay-content {
+                position: relative;
+                top: 25%;
+                width: 100%;
+                text-align: center;
+                margin-top: 30px;
+                }
+
+                .overlay a {
+                padding: 8px;
+                text-decoration: none;
+                font-size: 36px;
+                color: #818181;;
+                display: block;
+                transition: 0.3s;
+                }
+
+                .overlay a:hover, .overlay a:focus {
+                color: #f1f1f1;
+                }
+
+                .overlay .closebtn {
+                position: absolute;
+                top: 20px;
+                right: 45px;
+                font-size: 60px;
+                }
+
+                @media screen and (max-height: 450px) {
+                .overlay {overflow-y: auto;}
+                .overlay a {font-size: 20px}
+                .overlay .closebtn {
+                font-size: 40px;
+                top: 15px;
+                right: 35px;
+                }
+                }
+
+                h1 {
+                    text-align: center;
+                    font-family: fantasy;
+                    text-decoration: underline;
+                }
+
+                h2 {
+                    text-align: center;
+                    font-family: fantasy;
+                }
+
+                div.a {
+                            text-align: center;
+                            font-family: 'Times New Roman', Times, serif;
+                            font-weight: bold;
+                            font-size: x-large;
+                                }
+
+                div.b {
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            font-size: x-large;
+                }
+
+                div.c {
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            font-size: x-large;
+                }
+
+                div.d {
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            font-size: x-large;
+                }
+
+</style>
+</head>
+<body>
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="index.html"><i class="fa fa-home">Home</i></a>
+    <a href="index1.html"><i class="fa fa-info-circle">About</i></a>
+    <a href="index2.html"></i><i class="fa fa-tasks">Tasks</i></a>
+    <a href="index3.html"><i class="fa fa-code">Skills</i></a>
+    <a href="index4.html"><i class="fa fa-certificate">Certificates</i></a>
+    <a href="index5.html"><i class="fa fa-phone">Contact</i></a>
+  </div>
+</div>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+<h1><p style="color: black">Personal Details</p></h1>
+
+<div class="a">
+    <p>Cebokazi Makasi is a Web Developer and a candidate at CodeTelligent Bootcamp 3. Currently an intern at Absa Yonglings.</p>
+    
+</div>
+
+    <div class="b">
+        <h2>Hobbies and Personal Skills</h2>
+        <p>Playing Rugby</p>
+        <p>Singing</p>
+        <p>Programming</p>
+        </div>
+        <br>
+
+<div class="c">
+    <h2>Educational Qualifications</h2>
+    <p>Matriculated in 2019. Have no tertiary qualifications</p>
+    </div>
+    <br>
+
+
+    <div class="d">
+    <h2>Work Experience</h2>
+    <p>Worked at Circle Spar in Mthatha as an All rounder from December 2019 to February 2020
+
+        Currently works as an intern at Absa Younglings in Cape Town</p>
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+}
+</script>
+     
+</body>
+</html>
